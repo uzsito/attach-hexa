@@ -40,8 +40,12 @@ The custom pcb board is holding the Arduino Nano, and makes it capable of pullin
 * Serial interface listener to receive commands
 * All settings can be saved to EEPROM 
 
+ToDo:
+
 ## BOM
 
 ## Serial interface
 -terminal programs, settings
 -command list
+
+## How to use?
