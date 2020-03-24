@@ -51,7 +51,7 @@ The following components are needed to assemble the custom pcb.
 | Pin header | Connector | 2.54mm single row | 15-pin male | 2 |
 | Pin socket | Connector | 2.54mm single row | 15-pin female | 2 |
 
-Note: Base resistor 4.7kΩ with 2N3904 can handle collector current up to 10mA by forced saturation (current flows from TACH pin to GND through transistor C-E). You can substitute transistor with another type, but keep in mind you have to recalculate base resistor values in this case.
+Note: 2N3904 can handle collector current up to 10mA with base resistor 4.7kΩ by forced saturation (current flows from TACH pin to GND through transistor C-E). You can substitute transistor with another type, but keep in mind you have to recalculate base resistor values in this case.
 
 ## Serial interface
 You can manage Attach-Hexa over serial. Connect USB cable to Arduino, and use any terminal program with the following settings:
