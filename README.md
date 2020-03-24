@@ -65,4 +65,6 @@ Available commands:
 * Print current settings to terminal: ```/print```
 * Save current settings to EEPROM: ```/save```
 
+![terminal](graphics/terminal.gif)
+
 ## How to use?
