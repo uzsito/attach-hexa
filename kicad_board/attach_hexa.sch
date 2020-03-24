@@ -38,7 +38,7 @@ L Device:R R1
 U 1 1 5E59F9B2
 P 7925 5325
 F 0 "R1" V 7925 5325 50  0000 C CNN
-F 1 "R" V 7809 5325 50  0001 C CNN
+F 1 "4,7k" V 7809 5325 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5325 50  0001 C CNN
 F 3 "~" H 7925 5325 50  0001 C CNN
 	1    7925 5325
@@ -49,7 +49,7 @@ L Device:R R2
 U 1 1 5E5A2B0A
 P 7925 5425
 F 0 "R2" V 7925 5425 50  0000 C CNN
-F 1 "R" V 7809 5425 50  0001 C CNN
+F 1 "4,7k" V 7809 5425 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5425 50  0001 C CNN
 F 3 "~" H 7925 5425 50  0001 C CNN
 	1    7925 5425
@@ -60,7 +60,7 @@ L Device:R R3
 U 1 1 5E5A37D4
 P 7925 5525
 F 0 "R3" V 7925 5525 50  0000 C CNN
-F 1 "R" V 7809 5525 50  0001 C CNN
+F 1 "4,7k" V 7809 5525 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5525 50  0001 C CNN
 F 3 "~" H 7925 5525 50  0001 C CNN
 	1    7925 5525
@@ -71,7 +71,7 @@ L Device:R R4
 U 1 1 5E5A3BCA
 P 7925 5725
 F 0 "R4" V 7925 5725 50  0000 C CNN
-F 1 "R" V 7809 5725 50  0001 C CNN
+F 1 "4,7k" V 7809 5725 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5725 50  0001 C CNN
 F 3 "~" H 7925 5725 50  0001 C CNN
 	1    7925 5725
@@ -105,7 +105,7 @@ L Device:R R5
 U 1 1 5E5DD53A
 P 7925 5825
 F 0 "R5" V 7925 5825 50  0000 C CNN
-F 1 "R" V 7809 5825 50  0001 C CNN
+F 1 "4,7k" V 7809 5825 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5825 50  0001 C CNN
 F 3 "~" H 7925 5825 50  0001 C CNN
 	1    7925 5825
@@ -116,7 +116,7 @@ L Device:R R6
 U 1 1 5E5DD8AF
 P 7925 5925
 F 0 "R6" V 7925 5925 50  0000 C CNN
-F 1 "R" V 7809 5925 50  0001 C CNN
+F 1 "4,7k" V 7809 5925 50  0001 C CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 7855 5925 50  0001 C CNN
 F 3 "~" H 7925 5925 50  0001 C CNN
 	1    7925 5925
@@ -194,61 +194,47 @@ GND
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E5209D6
-P 6550 7250
-F 0 "H1" H 6650 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6650 7208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 6550 7250 50  0001 C CNN
-F 3 "~" H 6550 7250 50  0001 C CNN
-	1    6550 7250
-	1    0    0    1   
+P 10700 6125
+F 0 "H1" V 10700 6275 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10700 6425 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10700 6125 50  0001 C CNN
+F 3 "~" H 10700 6125 50  0001 C CNN
+	1    10700 6125
+	0    1    -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5E51F0C0
-P 6725 7250
-F 0 "H2" H 6825 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6825 7208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 6725 7250 50  0001 C CNN
-F 3 "~" H 6725 7250 50  0001 C CNN
-	1    6725 7250
-	1    0    0    1   
+P 10700 6375
+F 0 "H2" V 10700 6525 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10700 6675 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10700 6375 50  0001 C CNN
+F 3 "~" H 10700 6375 50  0001 C CNN
+	1    10700 6375
+	0    1    -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5E51F75E
-P 6900 7250
-F 0 "H3" H 7000 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7000 7208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 6900 7250 50  0001 C CNN
-F 3 "~" H 6900 7250 50  0001 C CNN
-	1    6900 7250
-	1    0    0    1   
+P 10700 6625
+F 0 "H3" V 10700 6775 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10700 6925 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10700 6625 50  0001 C CNN
+F 3 "~" H 10700 6625 50  0001 C CNN
+	1    10700 6625
+	0    1    -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5E51FBDF
-P 7075 7250
-F 0 "H4" H 7175 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7175 7208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 7075 7250 50  0001 C CNN
-F 3 "~" H 7075 7250 50  0001 C CNN
-	1    7075 7250
-	1    0    0    1   
+P 10700 6875
+F 0 "H4" V 10700 7025 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10700 7175 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 10700 6875 50  0001 C CNN
+F 3 "~" H 10700 6875 50  0001 C CNN
+	1    10700 6875
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	6725 7150 6725 6875
-Wire Wire Line
-	6725 6875 6900 6875
-Wire Wire Line
-	6900 7150 6900 6875
-Connection ~ 6900 6875
-Wire Wire Line
-	6900 6875 7075 6875
-Wire Wire Line
-	7075 7150 7075 6875
-Connection ~ 7075 6875
-Wire Wire Line
-	7075 6875 7950 6875
 $Comp
 L Connector_Generic:Conn_01x15 J3
 U 1 1 5E531899
@@ -321,7 +307,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 5450 11000 5450
 Wire Wire Line
-	10450 6875 10450 5550
+	10450 6875 10450 6625
 Wire Wire Line
 	10450 5550 11000 5550
 Wire Wire Line
@@ -648,14 +634,6 @@ Wire Wire Line
 Wire Wire Line
 	6325 3775 6325 6875
 Connection ~ 6325 6875
-Connection ~ 6725 6875
-Wire Wire Line
-	6550 7150 6550 6875
-Wire Wire Line
-	6325 6875 6550 6875
-Connection ~ 6550 6875
-Wire Wire Line
-	6550 6875 6725 6875
 Wire Wire Line
 	6075 7125 6075 6875
 Connection ~ 6075 6875
@@ -708,4 +686,24 @@ Text Notes 11225 5275 0    50   ~ 0
 CH5
 Text Notes 11225 5375 0    50   ~ 0
 CH6
+Wire Wire Line
+	6325 6875 7950 6875
+Wire Wire Line
+	10600 6125 10450 6125
+Connection ~ 10450 6125
+Wire Wire Line
+	10450 6125 10450 5550
+Wire Wire Line
+	10600 6375 10450 6375
+Connection ~ 10450 6375
+Wire Wire Line
+	10450 6375 10450 6125
+Wire Wire Line
+	10600 6625 10450 6625
+Connection ~ 10450 6625
+Wire Wire Line
+	10450 6625 10450 6375
+Wire Wire Line
+	10600 6875 10450 6875
+Connection ~ 10450 6875
 $EndSCHEMATC
