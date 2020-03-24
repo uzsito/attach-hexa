@@ -40,12 +40,29 @@ The custom pcb board is holding the Arduino Nano, and makes it capable of pullin
 * All settings can be saved to EEPROM to survive reboots
 * Easily accessible Nano pin headers for potential new features, reserved pins marked on silkscreen
 
-ToDo:
+## PCB BOM
+The following components are needed to assemble the custom pcb.
 
-## BOM
+| Component  | Type | Package | Value | Quantity |
+| ---------- | ---- | ------- | ----- | -------- |
+| R1-R6 | Resistor | SMD-2010 | 4.7kΩ | 6 | 
+| Q1-Q6 | Transistor | TO-92 | 2N3904 | 6 | 
+| Pin header | Connector | 2.54mm single row | 8-pin male | 1 |
+| Pin header | Connector | 2.54mm single row | 15-pin male | 2 |
+| Pin socket | Connector | 2.54mm single row | 15-pin female | 2 |
+
+Note: Base resistor 4.7kΩ with 2N3904 can handle collector current up to 10mA by forced saturation (current flows from TACH pin to GND through transistor C-E). You can substitute transistor with another type, but keep in mind you have to recalculate base resistor values in this case.
 
 ## Serial interface
--terminal programs, settings
--command list
+You can manage Attach-Hexa over serial. Connect USB cable to Arduino, and use any terminal program with the following settings:
+* Baud Rate: 115200 | Data: 8bit | Parity: none | Stop bits: 1bit | Flow control: none 
+* Local echo: on | New line transmit marker: CR, LF or CR+LF 
+
+Available commands:
+* Set any channel RPM: ```/channel 2 4000```
+* Link LED to channel: ```/led link 2```
+* Adjust LED delay multiplier to get visible blinking: ```/led multi 60```
+* Print current settings to terminal: ```/print```
+* Save current settings to EEPROM: ```/save```
 
 ## How to use?
