@@ -9,11 +9,10 @@ Attach-Hexa is a combined circuit board, which consists of three parts:
 
 With the code uploaded to the Arduino, a complete Attach-Hexa is able to drive six computer fan headers (channels) with TACH signals. Users can easily adjust the required RPM simulation on each channel, using pre-defined commands on serial interface.
 
-![rpm_simulation](graphics/render1.jpg)
-![rpm_simulation](graphics/render2.jpg)
-![rpm_simulation](graphics/render3.jpg)
-![rpm_simulation](graphics/render4.jpg)
-![rpm_simulation](graphics/render5.jpg)
+![render1](graphics/render1.jpg)
+![render2](graphics/render2.jpg)
+![render3](graphics/render3.jpg)
+![render4](graphics/render4.jpg)
 
 ![rpm_simulation](graphics/rpm_simulation.jpg)
 
@@ -38,7 +37,8 @@ The custom pcb board is holding the Arduino Nano, and makes it capable of pullin
 * Built-in LED can be linked to any channel as a visual tracker
 * Desired RPMs, LED linked channel and LED frequency settings can be adjusted at runtime
 * Serial interface listener to receive commands
-* All settings can be saved to EEPROM 
+* All settings can be saved to EEPROM to survive reboots
+* Easily accessible Nano pin headers for potential new features, reserved pins marked on silkscreen
 
 ToDo:
 
