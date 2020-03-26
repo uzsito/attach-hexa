@@ -28,7 +28,7 @@ TACH signals are used to report the current RPM of cooling fans to the system. E
 
 ![rpm_simulation](graphics/header.jpg)
 
-On most motherboards headers, TACH pin is pulled high (+10-12V) by default, using internal pullup resistor. As the connected fan turns, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code.
+On most motherboards headers, TACH pin is pulled high (+10-12V) by default, using internal pullup resistor. As the connected fan turns, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code. The following schematic represents square-wave generation on channel 1:
 
 ![channel](graphics/channel.jpg)
 
@@ -53,7 +53,7 @@ The following components are needed to assemble the custom pcb.
 | Pin header | Connector | 2.54mm single row | 15-pin male | 2 |
 | Pin socket | Connector | 2.54mm single row | 15-pin female | 2 |
 
-Note: 2N3904 can handle collector current up to 10mA with base resistor 4.7kΩ by forced saturation (current flows from TACH pin to GND through transistor C-E). You can substitute transistor with another type, but keep in mind you have to recalculate base resistor values in this case.
+Note: 2N3904 can handle collector current up to 10mA with base resistor 4.7kΩ by forced saturation (current flows from TACH pin to GND through transistor C-E). It is possible to substitute transistors with another type, but keep in mind you have to recalculate base resistor values in this case.
 
 ## Serial interface
 You can manage Attach-Hexa over serial. Connect USB cable to Arduino, and use any terminal program with the following settings:
@@ -80,7 +80,7 @@ Available commands:
 1. Clone or download this repository.
 2. Plot the custom pcb to gerber files using the included KiCAD project. Any chinese manufacturer (JLPCB, ALLPCB, PCBWAY, etc.) can fabricate a copy from gerber for a couple dollars. Really, it's dirt cheap.
 3. Once you got the pcb and the few listed components, assemble Attach-Hexa by hand soldering, no special tool needed.
-4. Upload the provided code to an Arduino Nano using Arduino IDE or other software, and place the Nano in the socket.
+4. Upload the provided code to an Arduino Nano using Arduino IDE or other software, and put the Nano in the socket.
 5. Connect your terminal application to USB port and use the commands to achieve the desired settings. Save to EEPROM.
 6. Place Hexa in the computer you would like to control, and make sure it is powered from that machine's USB port or fan header. Common GND is very important to pull TACH lines properly.
 7. Attach channel pins to required TACH pins, and check the simulated RPM in the BIOS/UEFI or OS.
