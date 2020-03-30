@@ -1,8 +1,7 @@
-# ![logo](graphics/logo.jpg)
-Configurable low-cost solution to produce fake cooling fan TACH signals for various computer systems.
+# ![logo](graphics/logo.jpg) ![hexafan](graphics/hexafan.jpg)
 
 ## Description
-Attach-Hexa is a combined circuit board, which consists of three parts:
+This project is a configurable low-cost solution to produce fake cooling fan TACH signals for various computer systems. It consists of three main parts:
 * Custom pcb with a few cheap components, mounting holes & socket for a replaceable microcontroller
 * Arduino Nano or any clone with the same pinout
 * Code running on Arduino to handle outputs in a flexible way
@@ -28,7 +27,7 @@ TACH signals are used to report the current RPM of cooling fans to the system. E
 
 ![rpm_simulation](graphics/header.jpg)
 
-On most motherboards headers, TACH pin is pulled high (+10-12V) by default, using internal pullup resistor. As the connected fan turns, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code. The following schematic represents square-wave generation on channel 1:
+On most motherboard headers, TACH pin is pulled high (+10-12V) by default, using internal pullup resistor. As the connected fan turns, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code. The following schematic represents square-wave generation on channel 1:
 
 ![channel](graphics/channel.jpg)
 
