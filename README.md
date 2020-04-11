@@ -6,7 +6,7 @@ This project is a configurable low-cost solution to produce fake cooling fan TAC
 * Arduino Nano or any clone with the same pinout
 * Code running on Arduino to handle outputs in a flexible way
 
-With the code uploaded to the Arduino, a complete Attach-Hexa is able to drive six computer fan headers (channels) with TACH signals. Users can easily adjust the required RPM simulation on each channel, using pre-defined commands on serial interface.
+With the code uploaded to Arduino, a complete Attach-Hexa is able to drive six computer fan headers (channels) with TACH signals. Users can easily adjust the required RPM simulation on each channel, using pre-defined commands on serial interface.
 
 ![render1](graphics/render1.jpg)
 ![render2](graphics/render2.jpg)
@@ -27,11 +27,11 @@ TACH signals are used to report the current RPM of cooling fans to the system. E
 
 ![rpm_simulation](graphics/header.jpg)
 
-On most motherboard headers, TACH pin is pulled high (+10-12V) by default, using internal pullup resistor. As the connected fan turns, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code. The following schematic represents square-wave generation on channel 1:
+On most motherboard headers, TACH pin is pulled high (+10-12V) by an internal pullup resistor. As the connected fan rotates, it's own built-in electronics (hall-effect sensor, transistor) pulls the TACH line to GND twice in every revolution. This results in a square-wave with a certain period, which is proportional to the fan's rotation speed. So if we would like to reproduce this, we have to pull that pin low at a specified rate. Arduino and similar microcontrollers can do that easily from code. The following schematic represents square-wave generation on channel 1:
 
 ![channel](graphics/channel.jpg)
 
-The custom pcb board is holding the Arduino Nano, and makes it capable of pulling +12V (or more) lines safely through transistors and base resistors. Arduino can be powered from any fan header (using Attach-Hexa GND & VIN pins as input) up to +12V, or from USB. The power source is automatically selected to the highest voltage.
+The custom pcb board is holding the Arduino Nano, and makes it capable of pulling +12V (or more) lines safely through transistors. The entire unit can be powered from any fan header (using GND & VIN pins) up to +12V, or from USB. The power source is automatically selected to the highest voltage.
 
 ## Features
 * Six simultaneously working channels
@@ -82,4 +82,4 @@ Available commands:
 4. Upload the provided code to an Arduino Nano using Arduino IDE or other software, and put the Nano in the socket.
 5. Connect your terminal application to USB port and use the commands to achieve the desired settings. Save to EEPROM.
 6. Place Hexa in the computer you would like to control, and make sure it is powered from that machine's USB port or fan header. Common GND is very important to pull TACH lines properly.
-7. Attach channel pins to required TACH pins, and check the simulated RPM in the BIOS/UEFI or OS.
+7. Attach channel pins to required TACH pins with dupont wires, and check the simulated RPM in the BIOS/UEFI or OS.
