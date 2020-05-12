@@ -57,7 +57,7 @@ Note: 2N3904 can handle collector current up to 10mA with base resistor 4.7kΩ b
 ## Serial interface
 You can manage Attach-Hexa over serial. Connect USB cable to Arduino, and use any terminal program with the following settings:
 * Baud Rate: 115200 | Data: 8bit | Parity: none | Stop bits: 1bit | Flow control: none 
-* Local echo: on | New line transmit marker: CR, LF or CR+LF 
+* Local echo: on | Send transmit marker: CR, LF or CR+LF 
 
 Available commands:
 * Set any channel RPM: `/channel 2 4000`
