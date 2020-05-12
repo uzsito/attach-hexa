@@ -79,7 +79,7 @@ Available commands:
 1. Clone or download this repository.
 2. Plot the custom pcb to gerber files using the included KiCAD project. Any chinese manufacturer (JLPCB, ALLPCB, PCBWAY, etc.) can fabricate a copy from gerber for a couple dollars. Really, it's dirt cheap.
 3. Once you got the pcb and the few listed components, assemble Attach-Hexa by hand soldering, no special tool needed.
-4. Upload the provided code to an Arduino Nano using Arduino IDE or other software, and put the Nano in the socket.
+4. Upload the provided code to an Arduino Nano using Arduino IDE (with [EEPROMex](https://github.com/thijse/Arduino-EEPROMEx) lib installed), and put the Nano in the socket.
 5. Connect your terminal application to USB port and use the commands to achieve the desired settings. Save to EEPROM.
 6. Place Hexa in the computer you would like to control, and make sure it is powered from that machine's USB port or fan header. Common GND is very important to pull TACH lines properly.
 7. Attach channel pins to required TACH pins with dupont wires, and check the simulated RPM in the BIOS/UEFI or OS.
