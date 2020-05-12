@@ -77,7 +77,7 @@ Available commands:
 
 ## Assembly and application
 1. Clone or download this repository.
-2. Plot the custom pcb to gerber files using the included KiCAD project. Any chinese manufacturer (JLPCB, ALLPCB, PCBWAY, etc.) can fabricate a copy from gerber for a couple dollars. Really, it's dirt cheap.
+2. Use the prebuilt gerber archive (.zip) to print the custom pcb. Any chinese manufacturer (JLPCB, ALLPCB, PCBWAY, etc.) can fabricate a copy for a couple dollars. Really, it's dirt cheap.
 3. Once you got the pcb and the few listed components, assemble Attach-Hexa by hand soldering, no special tool needed.
 4. Upload the provided code to an Arduino Nano using Arduino IDE (with [EEPROMex](https://github.com/thijse/Arduino-EEPROMEx) lib installed), and put the Nano in the socket.
 5. Connect your terminal application to USB port and use the commands to achieve the desired settings. Save to EEPROM.
