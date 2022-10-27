@@ -42,6 +42,8 @@ The custom pcb board is holding the Arduino Nano, and makes it capable of pullin
 * Easily accessible Nano pin headers for potential new features, reserved pins marked on silkscreen
 
 ## PCB BOM
+The PCB's size is 91mm * 26mm measured by PCBWAY's system. According to KiCAD it is 91,338mm * 25,87mm.
+
 The following components are needed to assemble the custom pcb.
 
 | Component  | Type | Package | Value | Quantity |
